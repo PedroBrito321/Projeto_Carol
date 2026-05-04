@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Registrar</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--logo do site-->
+    <img src="imagens/logo.png" width="70">
+    
+    <table class="abrobora">
+        <tr>
+            <td>
+                <!--botao de voltar ;)-->
+                    <button class="volt" onclick="history.back()">Voltar</button>
+                    
+                <!--começo do cadrasto do ajudador da ong-->
+                    <h1 class="top">Cadastro</h1>
+               
+                <form action="#" name="registrar" method="post">  
+                        <label class="cha">e-mail</label><br>
+                        <!--coloquei uma classe genérica "bob" para os campos-->
+                         <input class="bob" type="email" name="email_r" placeholder="coloque o seu melhor e-mail" required><br>
+
+                        <label class="cha">número</label><br>
+                         <input class="bob" type="tel" name="numero_r" placeholder="( ) xxxxx-xxxx" maxlength="15" required><br>
+
+                        <label class="cha">data de aniverário</label><br>
+                        <input class="bob" type="date" name="aniversario_r" required><br>
+
+                        <label class="cha">crie sua senha</label><br>
+                        <input class="bob" type="password" name="senha_r" placeholder="6 digitos" required><br>
+
+                        <label class="cha">confirme sua senha</label><br>
+                        <input class="bob" type="password" name="confirmaS_r" placeholder="6 digitos" required><br>
+ 
+                        <a href="login1.html"><button>Crie sua conta</button></a>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
