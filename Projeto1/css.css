@@ -1,6 +1,6 @@
 .among {
     width: 500px;
-    height: 400px;
+    height: 300px;
     border: 9px solid blue;
     border-radius: 15px;
     margin: 120px auto; /* aumenta aqui pra descer */
@@ -47,6 +47,7 @@
             text-align: center;
             font-size: 25px;
             width: 120px;
+            border: 3px solid rgb(10, 31, 46)
             
         }
         .btV{
@@ -59,13 +60,6 @@
             
             
         }
-
-
-
-
-
-
-
 
  /*aqui é da pagina de criar_conta.html*/
 
@@ -106,3 +100,10 @@
    color: aqua;
    border-radius: 10px;
 }
+/* parte da home page!*/
+        #meuCab{
+            background-color:rgb(0, 153, 255);
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }

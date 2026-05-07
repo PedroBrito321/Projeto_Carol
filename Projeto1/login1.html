@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--pedrao, adicionei apenas o css externo, NAO tira da pasta na hora de descompactar-->
     <link rel="stylesheet" type="text/css" href="css.css">
+    <!--O java script que o professor passou pra validação de user e senha-->
+       <script LANGUAGE="javaScript">
+        function validacao(){
+            /* Validação e senha da usuário */
+           
+            var user1 = document.login.user.value;
+            var pass = document.login.senha.value;
+            
+            /*teste da senha (321)*/
+            if (pass == 321){
+                window.open("home.html");
+                 
+                return 1;
+            } /* if da senha */
+            else {
+                alert("Usuário ou senha incorretos! Tente novamente idiota!");
+                document.login.user.value="";
+                document.login.senha.value="";
+            } /* else da senha */
+        } /* chave principal */
+       </script>
     <title>Login</title>
-    <style>
-     
-    </style>
+
 </head>
 <body background="">
     
@@ -19,12 +38,20 @@
     <table class="among">
         <tr>
             <td>
-                  <form name="login" method="post">
+                  <form name="login">
+                    <p>
                         <p class="txt">Login</p>
 
-                        <input class="inp" type="email" name="email" placeholder="e-mail"><br><br><br>
+                        <input class="inp" type="text" name="user" placeholder="e-mail"><br><br><br>
                         <input class="inp" type="password" name="senha" placeholder="senha" required><br><br><br>
-                        <button name="entrar" value="Entrar" class="bt">Entrar</button><br><br>
+
+
+                        <input type="button" name="entrar" value="Entrar" class="bt" onClick='validacao()'><br><br>
+                       
+                       
+                       
+                       
+                       
                         <a href="reset_senha" class="txt">esqueceu sua senha?</a> <br>
                     
                     <p class="lb">Não tem uma conta? 
