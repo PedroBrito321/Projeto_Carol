@@ -5,40 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css.css">
-    <style>
-        .pCAB{
-            text-align:center;
 
+    <style>
+
+        .pCAB{
+            display: flex;
+            align-items: center;
+            margin: 0;
+            flex: 1;
+            justify-content: center;
         }
+
         .pesq{
-            text-align: right ;
+            text-align: center;
+            font-size: 20px;
             border-radius: 8px;
+            margin-left: auto;
+            width: 250px;
+            height: 40px;
+            border: none;
         }
-        
+
         .Cab{
-            background-color: rgb(165, 165, 165);
-            text-align:left;
+            background-color: rgba(0, 153, 255, 0.589);
             color: black;
-            padding: 40px;
             border-radius: 15px;
-            height: 20px
+            padding: 10px;
+            height: 75px;
+
+            display: flex;
+            align-items: center;
         }
+
         .divIMG{
-            background-color: rgb(165, 165, 165);
-            height: 800px;
+            background-color: rgba(0, 153, 255, 0.589);
             width: 50%;
+            border-radius: 10px;
+            padding: 15px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
         }
-        
+
+        h4.text{
+            font-size: 25px;
+            text-align: center;
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .divIMG img{
+            width: 48%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
     </style>
 </head>
+
 <body>
-    <div class="Cab"><img src="imagens/logo.png" class="img " height="70px">
+
+    <div class="Cab">
+        <img src="imagens/logo.png" height="70px" class="img">
         <h1 class="pCAB">Como Ajudar? | Sobre Nós | Projeto</h1>
-        <input type="search" name=pesquisar class="pesq" align="right" placeholder="arrecadação total, ongs que ajudamos..."></div><br>
+        <input type="search" name="pesquisar" class="pesq" placeholder="o que posso te ajudar?">
+    </div>
+    <br>
     <div class="divIMG">
-        <img src="imagens/img1_home.jpg" height="50%" width="50%" style=" padding: 10px;">
-        <img src="imagens/img3_home.jpg" height="80%" width="45%" align="right" style="padding: 5px;">  
-        <img src="imagens/img2_home.png" height="40%" width="50%%" style="padding: 10px;">
+        <h4 class="text">
+            Enquanto para uns abrir a torneira é um hábito, para milhões é um luxo. Água potável é direito humano, não privilégio!
+        </h4>
+        <img src="imagens/img1_home.jpg">
+        <img src="imagens/img3_home.jpg">
+        <img src="imagens/img2_home.png">
+        <img src="imagens/img4_home.jpg">
     </div>
 </body>
 </html>
