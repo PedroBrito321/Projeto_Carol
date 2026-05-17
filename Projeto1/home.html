@@ -7,6 +7,24 @@
     <link rel="stylesheet" type="text/css" href="css.css">
 
     <style>
+        .divV{
+            border:10px solid red;
+        }
+        .tituNOT{
+            text-align:center;
+            font-size: 30px;
+            color: crimson;
+            font-weight:bolder;
+        }
+        .fundo{
+            background-color: rgba(194, 194, 194, 0.397);
+        }
+        p.not{
+            text-align: justify;
+            font-size: x-large;
+            color: rgb(0, 0, 0);
+            padding: 4px;
+        }
 
         .pCAB{
             display: flex;
@@ -37,6 +55,12 @@
             align-items: center;
         }
 
+        .divPAI{
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
         .divIMG{
             background-color: rgba(0, 153, 255, 0.589);
             width: 50%;
@@ -62,32 +86,53 @@
             object-fit: cover;
             border-radius: 4px;
         }
+
         .divNOT{
-            border: 5px solid rgba(0, 153, 255, 0.589);
-            float: right;
+            border: 12px solid rgba(0, 153, 255, 0.589);
+            border-radius: 4px;
             width: 45%;
             height: 100%;
         }
     </style>
 </head>
 
-<body>
+<body class="fundo">
 
     <div class="Cab">
-        <img src="imagens/logo.png" height="70px" class="img">
+        <a href="home.html"><img src="imagens/logo.png" height="70px" class="img"></a>
         <h1 class="pCAB">Como Ajudar? | Sobre Nós | Projeto</h1>
         <input type="search" name="pesquisar" class="pesq" placeholder="o que posso te ajudar?">
     </div>
+
     <br>
-    <div class="divIMG">
-        <h4 class="text">
-            Enquanto para uns abrir a torneira é um hábito, para milhões é um luxo. Água potável é direito humano, não privilégio!
-        </h4>
-        <img src="imagens/img1_home.jpg">
-        <img src="imagens/img3_home.jpg">
-        <img src="imagens/img2_home.png">
-        <img src="imagens/img4_home.jpg">
-    </div>
-    <div class="divNOT">dfgdffdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddf</div>
+
+    <div class="divPAI">
+
+        <div class="divIMG">
+            <h4 class="text">
+                Enquanto para uns abrir a torneira é um hábito, para milhões é um luxo. Água potável é direito humano, não privilégio!
+            </h4>
+
+            <img src="imagens/img1_home.jpg">
+            <img src="imagens/img3_home.jpg">
+            <img src="imagens/img2_home.png">
+            <img src="imagens/img4_home.jpg">
+        </div>
+
+        <div class="divNOT">
+            <h1 class="tituNOT"><b>O Brasil ainda perde cerca de 40% da água potável produzida</b></h1>
+            <p class="not">
+o Brasil ainda perde cerca de 40% da água potável produzida antes que ela chegue às torneiras da população. apesar de pequenas quedas registradas nos últimos anos, o índice continua muito acima da meta ideal de 25% estabelecida pelo Governo Federal. atualmente, o volume desperdiçado equivale a milhares de piscinas olímpicas de água tratada.
+        </div>
+
+    </div><br>
+    <div class="divPAI">
+    <div class="divV">
+        <video width="100%" height="400px" controls>
+        <source src="imagens/video_home.mp4" type="video/mp4">
+    </video>
+</div>
+</div>
+
 </body>
 </html>
